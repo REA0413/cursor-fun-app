@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import Layout from '../layout';
+// import Layout from '../layout';
 
 export default function Contact() {
     const [name, setName] = useState('');

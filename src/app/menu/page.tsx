@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import Layout from '../layout'; // Import the Layout component
+import Image from 'next/image';
+// import Layout from '../layout'; // Import the Layout component
 
 export default function Menu() {
     const [menuItems, setMenuItems] = useState<{ name: string; price: string; imageUrl?: string }[]>([]);
@@ -42,7 +43,7 @@ export default function Menu() {
                 {menuItems.map((item, index) => (
                     <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden bg-gray-100">
                         {item.imageUrl && (
-                            <img src={item.imageUrl} alt={item.name} className="w-full h-48 object-cover" />
+                            <Image src={item.imageUrl} alt={item.name} width={500} height={200} className="w-full h-48 object-cover" />
                         )}
                         <h2 className="text-2xl text-center px-4 pt-2 text-gray-600">{item.name}</h2>
                         <p className="text-center text-lg text-amber-600">{item.price}</p>

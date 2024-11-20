@@ -45,7 +45,7 @@ export default function Home() {
         </h2>
         <p className="text-center mb-6 text-gray-800 text-sm">
           Indulge in a unique dining experience with our exquisite menu and warm
-          hospitality.<br/>Whether you're up to a local delicacy or longing for you home country comfort food, we've got you covered!
+          hospitality.<br/>Whether you&#39;re up to a local delicacy or longing for you home country comfort food, we&#39;ve got you covered!
         </p>
       </div>
       <div className="flex flex-col items-center">

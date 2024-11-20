@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Layout from "../layout";
+// import Layout from "../layout";
 
 type TeamMember = {
   name: string;
@@ -47,7 +47,7 @@ export default function About() {
           Meet Our Team
         </h1>
         <h1 className="text-lg text-center text-gray-500 mb-6">
-          We look sassy, but we're not!
+          We look sassy, but we&#39;re not!
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
